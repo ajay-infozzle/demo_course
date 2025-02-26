@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "uri": "/videos/1048565727/texttracks/208125062",
+            "active": true,
+            "type": "captions",
+            "language": "en-x-autogen",
+            "display_language": "English (auto-generated)",
+            "id": 208125062,
+            "link": "https://captions.cloud.vimeo.com/captions/208125062.vtt?expires=1737645356&sig=72213aef405e5e7a78b9514370700424453bc48f&download=auto_generated_captions.vtt",
+            "link_expires_time": 1737645356,
+            "source_link": "https://captions.cloud.vimeo.com/source/208125062?expires=1737645356&sig=27cbd234b882d20bde2fa0a4f9cd8d373af2b331",
+            "source_link_expires_time": 1737645356,
+            "hls_link": "https://captions.cloud.vimeo.com/captions/208125062.vtt?expires=1737645356&sig=948f82df2fc00f2a3fd131cf5385260ead43f60d&download=auto_generated_captions.vtt&hls=1",
+            "hls_link_expires_time": 1737645356,
+            "name": "auto_generated_captions.vtt"
+        }
+    ]
+}

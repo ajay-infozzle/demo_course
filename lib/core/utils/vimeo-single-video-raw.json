@@ -1,0 +1,112 @@
+{
+    "uri": "/videos/1048565727",
+    "name": "Nicole-private-healing-testimonial",
+    "description": "",
+    "type": "video",
+    "duration": 240,
+    "width": 848,
+    "language": "en",
+    "height": 480,
+    "download": [
+        {
+            "quality": "sd",
+            "rendition": "540p",
+            "type": "video/mp4",
+            "width": 848,
+            "height": 480,
+            "expires": "2025-01-24T10:24:13+00:00",
+            "link": "https://player.vimeo.com/progressive_redirect/download/1048565727/container/a09cc777-bb88-42e9-b1f6-21f021da1cb9/12c8e096-2a846b12/nicole-private-healing-testimonial%20%28540p%29.mp4?expires=1737714253&loc=external&oauth2_token_id=1752096022&signature=0156535cfbd6813f79080aa5131d807413085235d1daff588be0b9504742fb1e",
+            "created_time": "2025-01-20T13:20:45+00:00",
+            "fps": 30,
+            "size": 30448774,
+            "md5": null,
+            "public_name": "540p",
+            "size_short": "29.04MB"
+        },
+        {
+            "quality": "sd",
+            "rendition": "240p",
+            "type": "video/mp4",
+            "width": 424,
+            "height": 240,
+            "expires": "2025-01-24T10:24:13+00:00",
+            "link": "https://player.vimeo.com/progressive_redirect/download/1048565727/container/a09cc777-bb88-42e9-b1f6-21f021da1cb9/42fdfc56-2a846b12/nicole-private-healing-testimonial%20%28240p%29.mp4?expires=1737714253&loc=external&oauth2_token_id=1752096022&signature=27aca0f1d6ee56913ad44d605406cb58c4db54a2949498b112c06c702e4c1d09",
+            "created_time": "2025-01-20T13:20:50+00:00",
+            "fps": 30,
+            "size": 12910449,
+            "md5": null,
+            "public_name": "240p",
+            "size_short": "12.31MB"
+        },
+        {
+            "quality": "sd",
+            "rendition": "360p",
+            "type": "video/mp4",
+            "width": 636,
+            "height": 360,
+            "expires": "2025-01-24T10:24:13+00:00",
+            "link": "https://player.vimeo.com/progressive_redirect/download/1048565727/container/a09cc777-bb88-42e9-b1f6-21f021da1cb9/87f4e980-2a846b12/nicole-private-healing-testimonial%20%28360p%29.mp4?expires=1737714253&loc=external&oauth2_token_id=1752096022&signature=e705c6c50d4db0ded9e564e7c058e8d57457f5c0e6fb9554b3740a38a40de070",
+            "created_time": "2025-01-20T13:21:34+00:00",
+            "fps": 30,
+            "size": 20139237,
+            "md5": null,
+            "public_name": "360p",
+            "size_short": "19.21MB"
+        }
+    ],
+    "play": {
+        "progressive": [
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 424,
+                "height": 240,
+                "link_expiration_time": "2025-01-24T10:24:13+00:00",
+                "link": "https://player.vimeo.com/progressive_redirect/playback/1048565727/container/a09cc777-bb88-42e9-b1f6-21f021da1cb9/42fdfc56-2a846b12?expires=1737714253&loc=external&oauth2_token_id=1752096022&signature=93d2fc189b0ed23b1c0d8ab7c6474bc5a68615ca83715e4973472ebed7fcba19",
+                "created_time": "2025-01-20T13:20:50+00:00",
+                "fps": 30,
+                "size": 12910449,
+                "md5": null,
+                "rendition": "240p"
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 636,
+                "height": 360,
+                "link_expiration_time": "2025-01-24T10:24:13+00:00",
+                "link": "https://player.vimeo.com/progressive_redirect/playback/1048565727/container/a09cc777-bb88-42e9-b1f6-21f021da1cb9/87f4e980-2a846b12?expires=1737714253&loc=external&oauth2_token_id=1752096022&signature=480c9d7915fe9caf1f622d800fc45f52f328563db16537ba27e9bff3907b0591",
+                "created_time": "2025-01-20T13:21:34+00:00",
+                "fps": 30,
+                "size": 20139237,
+                "md5": null,
+                "rendition": "360p"
+            },
+            {
+                "type": "video/mp4",
+                "codec": "H264",
+                "width": 848,
+                "height": 480,
+                "link_expiration_time": "2025-01-24T10:24:13+00:00",
+                "link": "https://player.vimeo.com/progressive_redirect/playback/1048565727/container/a09cc777-bb88-42e9-b1f6-21f021da1cb9/12c8e096-2a846b12?expires=1737714253&loc=external&oauth2_token_id=1752096022&signature=013e3989b2464c2f114190bd60143a1210c652e55d5eccf9cbada78dd57417df",
+                "created_time": "2025-01-20T13:20:45+00:00",
+                "fps": 30,
+                "size": 30448774,
+                "md5": null,
+                "rendition": "540p"
+            }
+        ],
+        "hls": {
+            "link_expiration_time": "2025-01-24T10:22:14+00:00",
+            "link": "https://player.vimeo.com/play/a09cc777-bb88-42e9-b1f6-21f021da1cb9/hls.m3u8?s=1048565727_1737714134_ccddbe893476bd8927c5174bbfc1f267&context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&oauth2_token_id=1752096022"
+        },
+        "dash": {
+            "link_expiration_time": "2025-01-24T10:22:14+00:00",
+            "link": "https://player.vimeo.com/play/a09cc777-bb88-42e9-b1f6-21f021da1cb9/dash.mpd?s=1048565727_1737714134_ccddbe893476bd8927c5174bbfc1f267&context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&oauth2_token_id=1752096022"
+        },
+        "status": "playable"
+    },
+    "status": "available",
+    "is_playable": true,
+    "has_audio": true
+}

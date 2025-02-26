@@ -1,0 +1,34 @@
+[
+    {
+        "id" : 1,
+        "title" : "Big Buck Bunny",
+        "description" : "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.",
+        "url" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "thumbnail" : "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+        "duration" : "9:56"
+    },
+    {
+        "id" : 2,
+        "title" : "Elephant Dream",
+        "description" : "The first Blender Open Movie from 2006",
+        "url" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "thumbnail" : "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
+        "duration" : "10:53"
+    },
+    {
+        "id" : 3,
+        "title" : "For Bigger Escape",
+        "description" : "Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when Batman's escapes aren't quite big enough.",
+        "url" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+        "thumbnail" : "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg",
+        "duration" : "0:15"
+    },
+    {
+        "id" : 4,
+        "title" : "For Bigger Fun", 
+        "description" : "Introducing Chromecast. The easiest way to enjoy online video and music on your TV.",
+        "url" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+        "thumbnail" : "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
+        "duration" : "1:00"
+    }
+]
