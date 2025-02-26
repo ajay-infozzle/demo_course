@@ -14,7 +14,7 @@ class InternetIndicatorWidget extends StatelessWidget {
       builder: (context, hasInternet) {
         return AnimatedContainer(
           duration: const Duration(milliseconds: 1000),
-          height: hasInternet ? 30 : 20,
+          height: hasInternet ? 30 : 20,  //~ for testing purpose i added 30 else 0
           width: double.infinity,
           color: hasInternet ? AppColor.green :Colors.red,
           child: Center(
