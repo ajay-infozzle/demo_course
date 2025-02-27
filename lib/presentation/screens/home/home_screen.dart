@@ -23,16 +23,8 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
 
-    print(">>home init");
     context.read<HomeCubit>().loadCourse();
   }
-
-  // @override
-  // void didChangeDependencies() {
-  //   super.didChangeDependencies();
-  //   print(">>home again didchange");
-  //   context.read<HomeCubit>().loadCourse();
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +70,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         horizontal: DeviceDimens.width * 0.03,
                         vertical: DeviceDimens.width * 0.03),
                     child: Text(
-                      "${context.read<VideoPlayerCubit>().lessonsList.length - context.read<VideoPlayerCubit>().courseDetail.data!.curriculum!.length } Videos Available",
+                      "${context.read<VideoPlayerCubit>().lessonsList.length - context.read<VideoPlayerCubit>().curriculumLength } Videos Available",
+                      // "${context.read<VideoPlayerCubit>().lessonsList.length - context.read<VideoPlayerCubit>().courseDetail.data.curriculum.length } Videos Available",
                       style: TextStyle(
                           fontSize: DeviceDimens.width * 0.05,
                           fontWeight: FontWeight.bold),
@@ -98,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                context.read<VideoPlayerCubit>().courseDetail.data!.title!,
+                                context.read<VideoPlayerCubit>().curriculumTitle,
                                 style: TextStyle(
                                     color: AppColor.black,
                                     fontSize: DeviceDimens.width * 0.055),

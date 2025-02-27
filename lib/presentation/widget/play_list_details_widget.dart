@@ -55,7 +55,8 @@ class PlayListDetailsWidget extends StatelessWidget {
                     ),
                   );
                 }else{
-                  if(videoNumber == (videoPlapeyCubit.lessonsList.length-videoPlapeyCubit.courseDetail.data!.curriculum!.length)){
+                  // if(videoNumber == (videoPlapeyCubit.lessonsList.length-videoPlapeyCubit.courseDetail.data!.curriculum!.length)){
+                  if(videoNumber == (videoPlapeyCubit.lessonsList.length-videoPlapeyCubit.curriculumLength)){
                     videoNumber = 0;
                   }
                   videoNumber++;

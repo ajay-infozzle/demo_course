@@ -21,7 +21,9 @@ class VideoPlayerCubit extends Cubit<VideoPlayerState> {
   final Map<dynamic, GlobalKey> itemKeys = {};
   List<dynamic> lessonsList = [];
   
-  late CourseDetailModel courseDetail ;
+  // CourseDetailModel? courseDetail ;
+  int curriculumLength = 0;
+  String curriculumTitle = "";
   Map<String, VideoProgressModel> videoProgressMetaData = {};
   int currentIndexPlaying = -1;
   int temp = 0;
@@ -153,7 +155,9 @@ class VideoPlayerCubit extends Cubit<VideoPlayerState> {
 
 
   void setPlaylist(CourseDetailModel course) async{
-    courseDetail = course;
+    // courseDetail = course;
+    curriculumLength = course.data!.curriculum!.length;
+    curriculumTitle = course.data!.title!;
 
     for(Curriculum curclm in course.data!.curriculum!){
       lessonsList.add(curclm.title??"");

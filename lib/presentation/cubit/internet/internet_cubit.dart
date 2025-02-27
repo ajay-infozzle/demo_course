@@ -7,7 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class InternetCubit extends Cubit<bool> {
   InternetCubit() : super(true) {
     Connectivity().onConnectivityChanged.listen((result) async{
-      bool hasInternet = await _checkInternetAccess(); //~ Check actual internet access
+      bool hasInternet = await checkInternetAccess(); //~ Check actual internet access
 
       if ((result.contains(ConnectivityResult.wifi) ||
            result.contains(ConnectivityResult.mobile) ||
@@ -23,7 +23,7 @@ class InternetCubit extends Cubit<bool> {
     });
   }
 
-  Future<bool> _checkInternetAccess() async {
+  Future<bool> checkInternetAccess() async {
     try {
       final result = await InternetAddress.lookup('google.com');
       log("Google-Ping-Result: $result", name:"InternetCubit");

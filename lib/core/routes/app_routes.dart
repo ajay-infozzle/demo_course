@@ -5,11 +5,10 @@ import 'package:demo_course_video/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-// final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
+final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
 class AppRoutes {
   static final GoRouter router = GoRouter(
-    // navigatorKey: rootNavigatorKey,
-    // initialLocation: RouteName.splashscreen,
+    navigatorKey: rootNavigatorKey,
     routes: [
       GoRoute(
         path: RouteName.splashscreen,
@@ -20,7 +19,7 @@ class AppRoutes {
             state.pageKey,
             transitionDuration: const Duration(milliseconds: 500),
           );
-        }
+        },
       ),
 
       GoRoute(

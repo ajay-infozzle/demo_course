@@ -7,6 +7,7 @@ import 'package:demo_course_video/presentation/cubit/video-player/video_player_c
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:hive/hive.dart';
 
@@ -26,6 +27,18 @@ Future<void> entryPoint() async {
   runApp(MyApp(key: GlobalKey(debugLabel: "MyAppKey"),));
 }
 
+Future<void> restartApp() async {
+  if (rootNavigatorKey.currentContext != null) {
+    GoRouter.of(rootNavigatorKey.currentContext!).go("/");
+    await Future.delayed(const Duration(seconds: 1));
+    await GetIt.instance.reset();
+
+    // final dir = await getApplicationDocumentsDirectory();  // Todo :
+    // Hive.init(dir.path);
+    setupLocator();
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -36,16 +49,14 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       key: GlobalKey(debugLabel: "MultiBlocProviderKey"),
       providers: [
-        BlocProvider(key: GlobalKey(debugLabel: "InternetProviderKey"), create: (context) => getIt<InternetCubit>()),
-        BlocProvider(key: GlobalKey(debugLabel: "HomeProviderKey"), create: (context) => getIt<HomeCubit>()),
-        BlocProvider(key: GlobalKey(debugLabel: "VideoProviderKey"), create: (context) => getIt<VideoPlayerCubit>()),
+        BlocProvider(create: (context) => InternetCubit()),
+        BlocProvider(create: (context) => getIt<HomeCubit>()),
+        BlocProvider(create: (context) => getIt<VideoPlayerCubit>()),
       ],
       child: Builder(builder: (context) {
-        // print(">>build provider: ${_providerKey.toString()}");
         return MediaQuery(
           data:MediaQuery.of(context).copyWith(textScaler: TextScaler.noScaling),
           child: MaterialApp.router(
-            // key: _key,
             debugShowCheckedModeBanner: false,
             title: 'Demo Course Video',
             theme: ThemeData(
@@ -65,10 +76,24 @@ class MyApp extends StatelessWidget {
                       child: GestureDetector(
                         child: const InternetIndicatorWidget(), 
                         onTap: () async {
-                          await GetIt.instance.reset();
-                          await entryPoint();
+                          // final router = GoRouter.of(rootNavigatorKey.currentContext!);
 
-                          // restartApp();
+                          // Print current navigation stack
+                          // final stack = router.routerDelegate.currentConfiguration.matches;
+                          // print(">> Before Reset - Navigation Stack:");
+                          // for (var match in stack) {
+                          //   print(">> ${match.matchedLocation}");
+                          // }
+
+                          // if (rootNavigatorKey.currentContext != null) {
+                          //   GoRouter.of(rootNavigatorKey.currentContext!).go("/");
+                          //   await Future.delayed(const Duration(seconds: 1));
+                          //   await GetIt.instance.reset();
+                          //   // await entryPoint();
+                          //   await restartApp();
+                          // }
+
+                          restartApp();
                         },
                       ),
                     ),

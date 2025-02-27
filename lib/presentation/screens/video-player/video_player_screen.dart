@@ -32,7 +32,8 @@ class VideoPlayerScreen extends StatelessWidget {
                           horizontal: DeviceDimens.width * 0.03,
                           vertical: DeviceDimens.width * 0.03),
                       child: Text(
-                        "${context.read<VideoPlayerCubit>().lessonsList.length - context.read<VideoPlayerCubit>().courseDetail.data!.curriculum!.length} Videos Available",
+                        "${context.read<VideoPlayerCubit>().lessonsList.length - context.read<VideoPlayerCubit>().curriculumLength} Videos Available",
+                        // "${context.read<VideoPlayerCubit>().lessonsList.length - context.read<VideoPlayerCubit>().courseDetail.data!.curriculum!.length} Videos Available",
                         style: TextStyle(
                             fontSize: DeviceDimens.width * 0.05,
                             fontWeight: FontWeight.bold),
